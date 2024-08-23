@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  simple-web-ui:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2024-08-23T16:01:09.465083862Z"
+    description: A Helm chart for a simple web UI application
+    digest: 6db73f727c0074ef35a8a55211e4111f5f62090ac94d8400f393dda9a2939343
+    name: simple-web-ui
+    type: application
+    urls:
+    - https://github.com/alokagarwal/helm-charts/releases/download/simple-web-ui-0.1.0/simple-web-ui-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-08-23T16:01:09.465090544Z"
