@@ -1,0 +1,21 @@
+# templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-web-ui-deployment
+spec:
+  replicas: {{.Values.replicaCount}}
+  selector:
+    matchLabels:
+      app: simple-web-ui
+  template:
+    metadata:
+      labels:
+        app: simple-web-ui
+    spec:
+      containers:
+        - name: simple-web-ui
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{.Values.image.pullPolicy}}
+          ports:
+            - containerPort: 80
